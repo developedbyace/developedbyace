@@ -118,6 +118,11 @@ body {
     font-size: 1rem;
   }
 
+  h3 {
+    font-size: 0.7rem;
+    width: 60vw;
+  }
+
   .answers {
     display: flex;
     flex-direction: column;

@@ -159,4 +159,13 @@ a:hover {
     margin-bottom: 1rem;
     width: 100%;
   }
+
+  .eduSection {
+    min-width: 100%;
+  }
+
+  .subSection .subSectionDetails h4 {
+    float: left;
+    margin-top: 0;
+  }
 }

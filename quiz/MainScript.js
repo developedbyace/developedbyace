@@ -2,7 +2,6 @@
 const startQuizBtn = document.querySelector(".start-quiz");
 const headingDiv = document.querySelector(".heading");
 const quizQuestionsDiv = document.querySelector(".quiz-questions");
-const answersArray = [1,3,4,1,3,4,3,3,4];
 const checkQuizBtn = document.querySelector(".check-quiz");
 const bonusQuestion = document.querySelector(".bonusQuestion");
 const timerDisplay = document.querySelector(".timerDiv");
@@ -14,8 +13,10 @@ const svgBackground = document.querySelector(".top-left-svg");
 
 const quizArray = document.querySelectorAll(".question"); // Getting all the question in a node list
 
+
+const answersArray = [1,3,4,1,3,4,3,3,4,2];
 let sec = 60; //timer
-let score = 2; //score
+let score = 0; //score
 let executed = false;   //A flag to prevent multiple runs of a function
 
 //Functions
@@ -62,6 +63,7 @@ checkQuizBtn.addEventListener("click", ()=>{
                     score = score + 2;
                 }else{
                     score--;
+                    currentLabels[currAnswer-1].classList.add("correct");
                 }
 
                 currentRadioBtns.forEach((currValue, currIndex)=>{
@@ -71,18 +73,16 @@ checkQuizBtn.addEventListener("click", ()=>{
                             currentLabels[currIndex].classList.add("correct");
                         }else{
                             currentLabels[currIndex].classList.add("wrong");
-                            currentLabels[currAnswer-1].classList.add("correct");
                         }
                     }
                     currValue.disabled = true;
                     });
-                bonusQuestion.classList.add("correct");
             },
         );
         timerDisplay.remove();
 
-        finalScore.innerHTML = `Your Score: ${Math.ceil((score/20)*100)}%`;
-        finalTime.innerHTML = `Time Allocated: ${60 - sec}s`;
+        finalScore.innerHTML = `Your Score: ${score}`;
+        finalTime.innerHTML = `Time Allocated: ${60 - sec} seconds`;
 
         executed = !executed;
         document.querySelector("button.check-quiz > span.button-text").innerHTML = "Try Again!";
@@ -93,6 +93,12 @@ checkQuizBtn.addEventListener("click", ()=>{
             svgBackground.style.fill = "#f17e7e";
         }
     }else{
+        const allRadioBtns = document.querySelectorAll("input");
+        allRadioBtns.forEach((currValue, currIndex)=>{
+            if(currValue.checked == true){
+                currValue.checked = false;
+            }
+        });
         location.reload();
     };
 });

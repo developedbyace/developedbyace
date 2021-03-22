@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+.rules {
+  margin: 1rem 0;
+}
+
 .container {
   position: absolute;
   top: 0;
