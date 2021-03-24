@@ -1,87 +1,82 @@
-*{
-	padding:0;
-	margin:0;
-	font-family:impact;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: impact;
 }
 
-body{
-	/* background-image:url(post22.jpg); */
-	background-repeat:no-repeat;
-	background-size:100%;
-    
-		
+body {
+  /* background-image:url(post22.jpg); */
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.bac{
-    background-color: rgba(0,0,0,0.8);
-    margin-top: 5px;
-    padding: 8px;
-    border-radius: 10px;
-
+.bac {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 10px;
 }
 
-
-.container{
-	text-align:center;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	width:100%;
+.container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
-.container span{
-	text-transform:uppercase;
-	display:block;	
+.container span {
+  text-transform: uppercase;
+  display: block;
 }
 
-.text1{
-	color:#ffffff;
-	font-size:80px;
-	font-weight:700;
-	letter-spacing:8px;
-	margin-bottom:20px;
-	position:relative;
-	animation: text 2s 1;
+.text1 {
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 2s 1;
 }
 
-.text2{
-	font-size:30px;
-	color:blue;
+.text2 {
+  font-size: 30px;
+  color: blue;
 }
 
-.student{
-	font-size:25px;
-	color:#ffffff;
-	font-family:impact;
+.student {
+  font-size: 25px;
+  color: #ffffff;
+  font-family: impact;
 }
 
-.text2, .student{
-	animation: change 1.5s step-end both;
+.text2,
+.student {
+  animation: change 1.5s step-end both;
 }
 
 @keyframes change {
-	from{color:lightblue}
-	to{color:#ffffff}	
+  from {
+    color: lightblue;
+  }
+  to {
+    color: #ffffff;
+  }
 }
 
-@keyframes text{
-	0%{
-		color:#0d3f91;
-		margin-bottom:-40px;
-	}
-	30%{
-		letter-spacing:25px;
-		margin-bottom:-80px;
-	}
-	85%{
-		letter-spacing:8px;
-		margin-bottom:-40px
-	}
+@keyframes text {
+  0% {
+    color: #0d3f91;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -80px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
 }
-
-
-
-
-
-
