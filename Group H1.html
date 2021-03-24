@@ -2,9 +2,24 @@
 	<html>
 		<head>
 			<title>SVG</title>
+			<link rel="stylesheet" href="/Navbar/navbar.css">
 			
 			<style>
-			
+			*{
+				margin:0;
+				padding:0;
+				box-sizing: border-box;
+			}
+
+			.wrapper{
+				margin-top: 7vh;
+				background-color: lightblue;
+			}
+
+			#svgJS rect{
+				cursor: pointer;
+			}
+
 			#svgJS g:hover polyline,
 			#svgJS g:hover line {
 				fill: none;
@@ -31,8 +46,27 @@
 			</style>
 		</head>
 		<body>
-		<h1>SVG Diagram</h1>
-		<div>
+			<nav class="navbar">
+				<div class="navbar-brand">
+					<img src="../Images/logomainn.png" class="logo">
+				</div>
+				<ul class="nav-list">
+					<li class="nav-item"><a class="nav-link" href="../homepage.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link active" href="../Group H1.html">History</a></li>
+					<li class="nav-item"><a class="nav-link" href="../Store/backpacks.html">Buy Product</a></li>
+					<li class="nav-item"><a class="nav-link" href="../quiz/index.html">Quiz</a></li>
+					<li class="nav-item"><a class="nav-link" href="../tripPlan/index.html">Trip plan</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://www.google.com/maps/place/Sri+Lanka/@7.9891315,80.4602138,8.56z/data=!4m5!3m4!1s0x3ae2593cf65a1e9d:0xe13da4b400e2d38c!8m2!3d7.873054!4d80.771797">Map</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+				</ul>
+					
+				<div class="menu-toggle">
+					<div class="hamburger">
+				</div>
+			</nav>
+			
+		<div class="wrapper">
+			<h1>SVG Diagram</h1>
 			<svg id="svgJS" height="1000" width="360">
 			<g id="groupId1">
 				<rect x="15" y="130" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
@@ -100,7 +134,7 @@
 			<script>
 				document.getElementById("groupId1").
 				addEventListener("click", function() {
-					document.location.href="mainpage.html";
+					document.location.href="homepage.html";
 			});
 			document.getElementById("groupId3").
 				addEventListener("click", function() {
@@ -108,15 +142,15 @@
 			});
 			document.getElementById("groupId5").
 				addEventListener("click", function() {
-					document.location.href="Store/index.html";
+					document.location.href="/Store/backpacks.html";
 			});
 			document.getElementById("groupId7").
 				addEventListener("click", function() {
-					document.location.href="quiz/index.html";
+					document.location.href="/quiz/index.html";
 			});
 			document.getElementById("groupId9").
 				addEventListener("click", function() {
-					document.location.href="tripPlan/index.html";
+					document.location.href="/tripPlan/index.html";
 			});
 			document.getElementById("groupId11").
 				addEventListener("click", function() {
@@ -124,13 +158,16 @@
 			});
 			document.getElementById("groupId13").
 				addEventListener("click", function() {
-					document.location.href="aboutUs/index.html";
+					document.location.href="/aboutUs/index.html";
 			});
 			document.getElementById("groupId15").
 				addEventListener("click", function() {
-					document.location.href="query form/queryform.html";
+					document.location.href="/query form/queryform.html";
 			});
 			</script>
+
+		<script src="/Navbar/navbarScript.js"></script>
+
 		</body>
 		
 	</html>
