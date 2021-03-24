@@ -1,0 +1,136 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>SVG</title>
+			
+			<style>
+			
+			#svgJS g:hover polyline,
+			#svgJS g:hover line {
+				fill: none;
+				stroke-width: 2;
+				stroke: black;
+			}
+
+			#svgJS g:hover g text,
+			#svgJS g:hover text {
+				font-weight: bold;
+			}
+
+			#svgJS g:hover polygon,
+			#svgJS g:hover rect,
+			#svgJS g:focus polygon,
+			#svgJS g:focus rect {
+				fill: hsla(24, 20%, 50%,.3);
+				stroke: black;
+				stroke-width: 2;
+			}
+		
+			div {text-align: center;}
+
+			</style>
+		</head>
+		<body>
+		<h1>SVG Diagram</h1>
+		<div>
+			<svg id="svgJS" height="1000" width="360">
+			<g id="groupId1">
+				<rect x="15" y="130" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+				<text fill="#000" font-size="14" x="90" y="160" font-family="Arial" text-anchor="middle">Home Page</text>
+			</g>
+			<g id="groupId2" >
+				<line id="shapeId2" stroke="purple" stroke-width="2" x1="90" y1="180" x2="90" y2="230"></line>
+				<polyline points="95, 220 90, 230 85, 220" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="groupId3" >
+				<rect x="15" y="230" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="260" font-family="Arial" text-anchor="middle">History</text>
+			</g>
+			<g id="groupId4" >
+				<line id="shapeId4" stroke="purple" stroke-width="2" x1="90" y1="280" x2="90" y2="330"></line>
+				<polyline points="95, 320 90, 330 85, 320" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="groupId5" >
+				<rect x="15" y="330" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="360" font-family="Arial" text-anchor="middle">Buy Product</text>
+			</g>
+			<g id="groupId6" >
+				<line id="shapeId6" stroke="purple" stroke-width="2" x1="90" y1="380" x2="90" y2="430"></line>
+				<polyline points="95, 420 90, 430 85, 420" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="groupId7" >
+				<rect x="15" y="430" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="460" font-family="Arial" text-anchor="middle">Quiz</text>
+			</g>
+			<g id="groupId8" >
+				<line id="shapeId8" stroke="purple" stroke-width="2" x1="90" y1="480" x2="90" y2="530"></line>
+				<polyline points="95, 520 90, 530 85, 520" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="groupId9" >
+				<rect x="15" y="530" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="560" font-family="Arial" text-anchor="middle">Trip plan</text>
+			</g>
+			<g id="groupId10" >
+				<line id="shapeId10" stroke="purple" stroke-width="2" x1="90" y1="580" x2="90" y2="630"></line>
+				<polyline points="95, 620 90, 630 85, 620" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="groupId11" >
+				<rect x="15" y="630" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="660" font-family="Arial" text-anchor="middle">Map</text>
+			</g>
+			<g id="groupId12" >
+				<line id="shapeId12" stroke="purple" stroke-width="2" x1="90" y1="680" x2="90" y2="730"></line>
+				<polyline points="95, 720 90, 730 85, 720" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="groupId13" >
+				<rect x="15" y="730" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="760" font-family="Arial" text-anchor="middle">About us</text>
+			</g>
+			<g id="groupId14" >
+				<line id="shapeId14" stroke="purple" stroke-width="2" x1="90" y1="780" x2="90" y2="830"></line>
+				<polyline points="95, 820 90, 830 85, 820" stroke="purple" stroke-width="2" fill="none" />
+			</g>
+			<g id="groupId15" >
+				<rect x="15" y="830" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+			<text fill="#000" font-size="14" x="90" y="860" font-family="Arial" text-anchor="middle">Query</text>
+			</g>
+			
+			</svg>
+		</div>
+			<script>
+				document.getElementById("groupId1").
+				addEventListener("click", function() {
+					document.location.href="mainpage.html";
+			});
+			document.getElementById("groupId3").
+				addEventListener("click", function() {
+					document.location.href="mainpage.html";
+			});
+			document.getElementById("groupId5").
+				addEventListener("click", function() {
+					document.location.href="Store/index.html";
+			});
+			document.getElementById("groupId7").
+				addEventListener("click", function() {
+					document.location.href="quiz/index.html";
+			});
+			document.getElementById("groupId9").
+				addEventListener("click", function() {
+					document.location.href="tripPlan/index.html";
+			});
+			document.getElementById("groupId11").
+				addEventListener("click", function() {
+					document.location.href="https://www.google.com/maps/place/Sri+Lanka/@7.9891315,80.4602138,8.56z/data=!4m5!3m4!1s0x3ae2593cf65a1e9d:0xe13da4b400e2d38c!8m2!3d7.873054!4d80.771797";
+			});
+			document.getElementById("groupId13").
+				addEventListener("click", function() {
+					document.location.href="aboutUs/index.html";
+			});
+			document.getElementById("groupId15").
+				addEventListener("click", function() {
+					document.location.href="query form/queryform.html";
+			});
+			</script>
+		</body>
+		
+	</html>

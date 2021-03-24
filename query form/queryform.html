@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>query form</title>
+	<link rel="stylesheet" href="query.css">
+    <link rel="stylesheet" href="../Navbar/navbar.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<nav class="navbar">
+        <div class="navbar-brand">
+            <img src="../Images/logomainn.png" class="logo">
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">History</a></li>
+            <li class="nav-item"><a class="nav-link" href="../Store/backpacks.html">Buy Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="../quiz/index.html">Quiz</a></li>
+            <li class="nav-item"><a class="nav-link" href="../tripPlan/index.html">Trip plan</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Map</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">About us</a></li>
+        </ul>
+            
+        <div class="menu-toggle">
+            <div class="hamburger">
+        </div>
+    </nav>
+
+	<div class="main">
+	<div class="register">
+			<h2><b> Query</b></h2>
+		
+	<form name="myForm" id="f1">
+	
+	<table cellspacing="15" align="center">
+		
+		<tr><td><label><p>Full Name : </label><br><input type="text" id="name" name="fname" placeholder="Full name"> </p></td></tr>
+	
+		<tr><td><label>Email : </label><br><input type="text" id="name" name="email" placeholder="Email"></td></tr>
+					
+		<tr><td><label>Contact Number : </label><br><input type="text" id="name" name="contactno" placeholder="Contact number"></td></tr>
+	
+		<tr><td><label>Country : </label><br><input type="text" id="name" name="country" placeholder="Country"></td></tr>
+		
+		<tr><td>Type : <br><select name="select" id="a">
+				<option value="Webpage">Webpage</option>
+				<option value="Buy product">Buy product</option>
+				<option value="Places we recommended to go.">Places we recommended to go.</option>
+				<option value="Quiz">Quiz </option>
+				<option value="Other">Other </option>
+				</select></tr></td>
+		
+		<tr><td><label>Description : </label><br>
+		<textarea name="comment" id="name" placeholder="Description.."></textarea>
+		<br><br></td></tr>
+					
+		<tr><td><input type="button" name="submit" id="submitButton" value="View Query"></button></td></tr>
+	</table>		
+	</form>
+	</div><!--end register-->
+	</div><!--end main-->
+
+			<div id="div">
+				<p id="fulname"></p>
+				<p id="emai"></p>
+				<p id="cont"></p>
+				<p id="countr"></p>
+				<p id="typ"></p>
+				<p id="desc"></p>
+				
+				<button type="button" name="submit" id="edit" onclick="edit()">Edit</button>
+				<button type="button" name="submit" id="send" onclick="send()">Send</button>
+			</div>	
+	
+<script src="query.js"></script>
+<script src="../Navbar/navbarScript.js"></script>
+
+</body>
+</html>

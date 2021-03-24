@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Online Store | Backpack</title>
+        <!-- add icon link -->
+        <link rel = "icon" href ="image/title.png" type = "image/x-icon">
+            
+        <meta charset="utf-8">
+        <!-- Linking styles -->
+        
+        <link rel="stylesheet" href="css/store.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="css/backpack.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+        <script src="js/products.js"></script>
+        
+        <link rel="stylesheet" href="../Navbar/navbar.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <script src="js/go.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/go.css">
+    
+       <script type="text/javascript">
+
+var id =["head1","name1","pric1","des1","adc1","head2","name2","pric2","des2","adc2","name3","pric3","des3","adc3","name4","pric4","des4","adc4","name5","pric5","des5","adc5","name6","pric6","des6","adc6","name7","pric7","name8","pric8","name9","pric9","name10","pric10","name11","pric11","name12","pric12","pric13","pric14","pric15","pric16","pric17","pric18","finish","fname","address","contact"];
+function resizefont(x){
+
+for(var i = 0; i<id.length; i++){
+var text = document.getElementById(id[i]);
+var currentSize = text.style.fontSize || 1;
+text.style.fontSize = ( parseFloat(currentSize) + (x * 0.05)) + "em";
+}
+}
+</script>
+	</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="../Images/logomainn.png" class="logo">
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">History</a></li>
+            <li class="nav-item"><a class="nav-link active" href="../Store/backpacks.html">Buy Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="../quiz/index.html">Quiz</a></li>
+            <li class="nav-item"><a class="nav-link" href="../tripPlan/index.html">Trip plan</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Map</a></li>
+            <li class="nav-item"><a class="nav-link" href="../aboutUs/index.html">About us</a></li>
+        </ul>
+            
+        <div class="menu-toggle">
+            <div class="hamburger">
+        </div>
+    </nav>
+        <header>
+       
+    
+                </header>
+
+
+
+<button type="submit" onclick="resizefont(1)">(+)</button>
+<button type="submit" onclick="resizefont(-1)">(-)</button>
+                <div class="container">
+                        <div id="main"><!-- Defining submain content section -->
+                            <section id="content"><!-- Defining the content section #2 -->
+                                <div id="left">
+                                    <h3 id="head1">Latest products</h3>
+                                    <ul>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post1.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name1" class="title" href="#">Osprey Aether AG70</a>
+                                                <p id="des1">210D Nylon Dobby Body, 210D High Tenacity Nylon Accent and 500D Nylon Packcloth Bottom</p>
+                                                <div id="pric1" class="price">
+                                                    <span class="st">Our price:</span><strong>Rs.2550</strong>
+                                                </div>
+                                                <div class="actions">
+                                                        <a id="adc1" onclick="AddCart('Osprey Aether AG70','2550')">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post2.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name2" class="title" href="#">Osprey Exos 58</a>
+                                                <p id="des2">Accommodates up to 3 liters of hydration and 100d high tenacity nylon</p>
+                                                <div id="pric2"class="price">
+                                                    <span class="st">Our price:</span><strong>Rs.2099</strong>
+                                                </div>
+                                                <div class="actions">
+                                                        <a id="adc2" onclick="AddCart('Osprey Exos 58','2099')">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post3.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name3" class="title" href="#">Deuter Speed Light 20</a>
+                                                <p id="des3">Provides carry comfort for light loads with a padded back panel fully lined with ventilated 3D-Air Mesh</p>
+                                                <div id="pric3" class="price">
+                                                    <span class="st">Our price:</span><strong>Rs.3500</strong>
+                                                </div>
+                                                <div class="actions">
+                                                        <a id="adc3" onclick="AddCart('Deuter Speed Light 20','3500')">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post4.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name4" class="title" href="#">Berghaus Freeflow 20L</a>
+                                                <p id="des4">V fresh air Technology allows airflow between the pack and your back</p>
+                                                <div id="pric4" class="price">
+                                                    <span class="st">Our price:</span><strong>Rs.5500</strong>
+                                                </div>
+                                                <div class="actions">
+                                                        <a id="adc4" onclick="AddCart('Berghaus Freeflow 20L','5500')">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post5.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name5" class="title" href="#">Deuter ACT Lite 65</a>
+                                                <p id="des5"> Distributes weight effectively so you can go further without discomfort</p>
+                                                <div id="pric5" class="price">
+                                                    <span class="st">Our price:</span><strong>Rs.2500</strong>
+                                                </div>
+                                                <div class="actions">
+                                                        <a id="adc5" onclick="AddCart('Deuter ACT Lite 65','2500')">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post6.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name6" class="title" href="#">Berghaus ACT Lite 45</a>
+                                                <p id="des6">Accommodates up to 2 liters of hydration and 80d high tenacity nylon</p>
+                                                <div id="pric6" class="price">
+                                                    <span class="st">Our price:</span><strong>Rs.3500</strong>
+                                                </div>
+                                                <div class="actions">
+                                                        <a id="adc6" onclick="AddCart('Berghaus ACT Lite 45','3500')">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="right">
+                                    <h3 id="head2">Top sells</h3>
+                                    <ul>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post7.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name7" class="title" href="#">Osprey 25</a>
+                                                <div class="price">
+                                                    <span id="pric7" class="usual">Rs6000 </span>&nbsp;
+                                                    <span id="pric8" class="special">Rs.5000</span>
+                                                    <span class= "cartbtn" onclick="AddCart('Osprey 25','5000')"><i class="fas fa-cart-arrow-down"></i></span>
+                
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post8.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name8" class="title" href="#">Berghaus 45</a>
+                                                <div class="price">
+                                                    <span id="pric9" class="usual">Rs.5000 </span>&nbsp;
+                                                    <span id="pric10" class="special">Rs.4000</span>
+                                                    <span class= "cartbtn" onclick="AddCart('Berghaus 45','4000')"><i class="fas fa-cart-arrow-down"></i></span>
+                
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post9.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name9" class="title" href="#">Lofo 100</a>
+                                                <div class="price">
+                                                    <span id="pric11" class="usual">Rs.7000 </span>&nbsp;
+                                                    <span id="pric12" class="special">Rs.6000</span>
+                                                    <span class= "cartbtn" onclick="AddCart('Lofo 100','6000')"><i class="fas fa-cart-arrow-down"></i></span>
+                
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post10.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name10" class="title" href="#">Bostor 45</a>
+                                                <div class="price">
+                                                    <span id="pric13" class="usual">Rs.8000 </span>&nbsp;
+                                                    <span id="pric14" class="special">Rs.7000</span>
+                                                    <span class= "cartbtn" onclick="AddCart('Bostor 45','7000')"><i class="fas fa-cart-arrow-down"></i></span>
+                
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post11.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name11" class="title" href="#">Osprey 100</a>
+                                                <div class="price">
+                                                    <span id="pric15" class="usual">Rs.1200 </span>&nbsp;
+                                                    <span id="pric16" class="special">Rs.1000</span>
+                                                    <span class= "cartbtn" onclick="AddCart('Osprey 100','1000')"><i class="fas fa-cart-arrow-down"></i></span>
+                
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="#"><img alt="" src="image/store/post12.jpg"></a></div>
+                                            <div class="info">
+                                                <a id="name12" class="title" href="#">Haylin 50</a>
+                                                <div class="price">
+                                                    <span id="pric17" class="usual">Rs.2000 </span>&nbsp;
+                                                    <span id="pric18" class="special">Rs.1500</span>
+                                                    <span class= "cartbtn" onclick="AddCart('Haylin 50','1500')"><i class="fas fa-cart-arrow-down"></i></span>
+                
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <div id="cartform">
+                            <br>
+                            <br>
+                        
+                    
+                     <h4 align="left" id="finish">Finish Shopping!!!</h4>
+                    <from>
+                        <div class="container">
+                        
+                    <label><h4 id="fname">Name :</h4></label><input type="text" id="name" name="Name" style="margin-left:10%; height:25px; width:25%;" placeholder="Your name.." onchange="validate();"/>
+                    
+                    <label><h4 id="address">Address :</h4></label><input type="text" id="ad1" name="ad1" style="margin-left:10%; height:25px; width:25%;" placeholder="Address Line-1" onchange="validate();"/><br/>
+                    
+                    <input type="text" id="ad2" name="ad2" style="margin-left:10%; height:25px; width:25%;" placeholder="Address Line-2"/>  
+                    
+                    <label><h4 id="contact">Contact Number :</h4></label><input type="text" id="num" name="num" style="margin-left:10%; height:25px; width:25%;" placeholder="Only 10 Digits" onchange="validate();"/>
+                    
+                    <br /><br />
+                    
+                    <input type="button" value="PROCEED TO CART" id="ok" onclick="validateForm(form);"/>
+                    
+                    
+                            </div>
+                        </from>
+                    
+                    </div>
+                        </div>
+
+        
+        <!-- Defining the footer section of the page -->
+        <!-- <footer>
+            <div id="privacy">
+                Online Store <a class="link" href="#">Privacy Policy</a><br />
+            </div>
+        </footer> -->
+
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script src="../Navbar/navbarScript.js"></script>
+
+</body>
+</html>
